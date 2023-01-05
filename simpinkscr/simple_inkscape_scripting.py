@@ -2179,6 +2179,7 @@ class SimpleInkscapeScripting(inkex.EffectExtension):
         sis_globals['height'] = _simple_top.height
         sis_globals['guides'] = _simple_top.get_existing_guides()
         sis_globals['print'] = _debug_print
+        sis_globals['svg_path'] = self.svg_path()
         try:
             # Inkscape 1.2+
             convert_unit = self.svg.viewport_to_unit
